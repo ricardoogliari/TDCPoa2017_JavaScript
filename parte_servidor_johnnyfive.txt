@@ -1,0 +1,3 @@
+A parte do servidor está no GitHub do Marcus Braga: https://github.com/volfgam/PalestraTDCJavaScript2017.
+
+O servidor dele responde as requisições feitas pelo app Ionic, disponível na pasta "Mobile" do meu GitHub, além de, responder as requisições e ligar a lâmpada atrav'es de um relê.
