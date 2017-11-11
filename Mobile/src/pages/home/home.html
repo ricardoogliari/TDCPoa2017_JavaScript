@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      TDC Porto Alegre
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-range [(ngModel)]="red" color="danger">
+          <ion-icon range-left small name="sunny" color="danger"></ion-icon>
+          <ion-icon range-right name="sunny" color="danger"></ion-icon>
+        </ion-range>
+      </ion-item>
+      <ion-item>
+        <ion-range [(ngModel)]="green" color="secondary">
+          <ion-icon range-left small name="sunny" color="secondary"></ion-icon>
+          <ion-icon range-right name="sunny" color="secondary"></ion-icon>
+        </ion-range>
+      </ion-item>
+      <ion-item>
+        <ion-range [(ngModel)]="blue" color="primary">
+          <ion-icon range-left small name="sunny" color="primary"></ion-icon>
+          <ion-icon range-right name="sunny" color="primary"></ion-icon>
+        </ion-range>
+      </ion-item>
+    </ion-card-content>
+
+    
+
+
+  </ion-card>
+
+  <ion-card>
+      <ion-card-header>
+        Temperatura:
+      </ion-card-header>
+      <ion-card-content>
+        {{temperatura}} C
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        Luz:
+      </ion-card-header>
+      <ion-card-content>
+        {{luz}}
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Rele</ion-label>
+          <ion-toggle #toogle checked="false" (ionChange)="switch(toogle.checked)"></ion-toggle>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+</ion-content>
